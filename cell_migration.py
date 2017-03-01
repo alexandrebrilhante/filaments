@@ -1,17 +1,12 @@
-import os
-from skimage.util import img_as_bool
-from skimage import io
-import matplotlib.pyplot as plt
-
-import numpy as np
-from skimage.transform import (hough_line, hough_line_peaks,
-                               probabilistic_hough_line)
-from skimage.feature import canny
-from skimage import data
-
-from skimage.measure import label, regionprops
 import math
-
+import os
+import matplotlib.pyplot as plt
+import numpy as np
+from skimage import data, io
+from skimage.feature import canny
+from skimage.measure import label, regionprops
+from skimage.transform import (hough_line, hough_line_peaks, probabilistic_hough_line)
+from skimage.util import img_as_bool
 
 image = img_as_bool(io.imread("cell.tif", as_grey=True)+0.15)
 
@@ -31,7 +26,6 @@ for props in regions:
     y1 = y0 - math.sin(orientation) * 0.5 * props.major_axis_length
     y0 = y0 + math.sin(orientation) * 0.5 * props.major_axis_length
 
-
     # reference: http://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops
     print "Length: ", props.major_axis_length
     print "Orientation [-pi/2, pi/2]: ", orientation
@@ -39,7 +33,5 @@ for props in regions:
     
     ax.plot((x0, x1), (y0, y1), '-r', linewidth=1.5)
 
-
 fig.tight_layout()
 plt.show()
-
