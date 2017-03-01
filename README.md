@@ -1,4 +1,4 @@
-# biohackaton2017
+# biohack2017
 
 
 ## Data
@@ -11,3 +11,4 @@ Dans `data`:
 
 + [Passer d'un skeleton a un graph (en 2D)](https://gist.github.com/jeanpat/5712699). Peut-etre plus facile pour trouver les *bouts* et simplifier le calcul de summary stats.
 + [Segmentation of 3-D tomography images with Python and scikit-image](http://emmanuelle.github.io/segmentation-of-3-d-tomography-images-with-python-and-scikit-image.html)
++ [Trouver les points d'interets](http://scikit-image.org/docs/dev/auto_examples/features_detection/plot_corner.html#sphx-glr-auto-examples-features-detection-plot-corner-py)
