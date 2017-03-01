@@ -1,5 +1,8 @@
 # biohack2017
 
+## Slides
+
+[Google Slides](https://docs.google.com/presentation/d/17niwPZWo3tH1Cati9ne99XYlknP1iCIGK575ggo5obE/edit?usp=sharing)
 
 ## Data
 
