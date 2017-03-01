@@ -28,7 +28,7 @@ plt.colorbar()
 plt.show()
 
 outf = open("../data/zscan3d-c2-crop-x700_800-y800_900.tsv", "w")
-for (x, y, z), v in numpy.ndenumerate(im3d_crop):
+for (z, y, x), v in numpy.ndenumerate(im3d_crop):
     if(v != 0):
         outf.write(str(x) + '\t' + str(y) + '\t' + str(z) + '\t' + str(v) + '\n')
 outf.close()
