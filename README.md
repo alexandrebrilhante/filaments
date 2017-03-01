@@ -10,3 +10,4 @@ Dans `data`:
 ## Inspiration
 
 + [Passer d'un skeleton a un graph (en 2D)](https://gist.github.com/jeanpat/5712699). Peut-etre plus facile pour trouver les *bouts* et simplifier le calcul de summary stats.
++ [Segmentation of 3-D tomography images with Python and scikit-image](http://emmanuelle.github.io/segmentation-of-3-d-tomography-images-with-python-and-scikit-image.html)
